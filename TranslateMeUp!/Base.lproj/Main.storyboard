@@ -1,26 +1,107 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="TranslateMeUp_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DhR-mS-i4a">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TranslateMeUp!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9i-wW-7SU">
+                                        <rect key="frame" x="93" y="40" width="189" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="26"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.31764705879999999" green="0.64313725489999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="pFR-7B-NlN"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Zv3-qS-VO5">
+                                <rect key="frame" x="16" y="90" width="343" height="702"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Say something, I'm listening!" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0z-c6-BEx">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="345"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Waiting for translate!" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSZ-SI-dYR">
+                                        <rect key="frame" x="0.0" y="357" width="343" height="345"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="Bdo-AF-z3w">
+                                <rect key="frame" x="36" y="716" width="303" height="42"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCa-BE-0qw">
+                                        <rect key="frame" x="0.0" y="0.0" width="133.66666666666666" height="42"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="25"/>
+                                        <state key="normal" title="EN -&gt; TR"/>
+                                        <connections>
+                                            <action selector="langBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GAW-ko-lQh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQu-hu-NB6">
+                                        <rect key="frame" x="169.66666666666663" y="0.0" width="133.33333333333337" height="42"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="25"/>
+                                        <state key="normal" title="Press &amp; Talk">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="microphoneTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mfs-tX-eOl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Zv3-qS-VO5" secondAttribute="trailing" constant="16" id="5GN-vu-AIl"/>
+                            <constraint firstAttribute="trailing" secondItem="DhR-mS-i4a" secondAttribute="trailing" id="7yE-ZJ-6ok"/>
+                            <constraint firstItem="Bdo-AF-z3w" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="AIr-e2-Gel"/>
+                            <constraint firstAttribute="bottom" secondItem="Zv3-qS-VO5" secondAttribute="bottom" constant="20" id="Ecv-3M-Odf"/>
+                            <constraint firstItem="DhR-mS-i4a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Jkf-nc-piO"/>
+                            <constraint firstItem="Zv3-qS-VO5" firstAttribute="top" secondItem="DhR-mS-i4a" secondAttribute="bottom" constant="10" id="Nj1-ND-Kda"/>
+                            <constraint firstItem="DhR-mS-i4a" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="afi-C9-cPx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bdo-AF-z3w" secondAttribute="trailing" constant="20" id="nYF-AY-ouC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Bdo-AF-z3w" secondAttribute="bottom" constant="20" id="rgi-Zc-4lb"/>
+                            <constraint firstItem="Zv3-qS-VO5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="wM0-CB-ei2"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="langBtnOut" destination="nCa-BE-0qw" id="VOV-Q7-koG"/>
+                        <outlet property="microphoneButton" destination="eQu-hu-NB6" id="cdk-ie-ER6"/>
+                        <outlet property="textView" destination="l0z-c6-BEx" id="RCi-Xy-Ghb"/>
+                        <outlet property="translatedView" destination="LSZ-SI-dYR" id="mX2-pZ-91o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.375" y="35.91549295774648"/>
         </scene>
     </scenes>
 </document>

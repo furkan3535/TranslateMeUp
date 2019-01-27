@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A6EB9817228E59829CD04CE /* Pods_TranslateMeUp_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED2EC9CDE8407B5CDEBA66C /* Pods_TranslateMeUp_.framework */; };
 		DCFFAD4A1F2EC52800F05AB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFFAD491F2EC52800F05AB4 /* AppDelegate.swift */; };
-		DCFFAD4C1F2EC52800F05AB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFFAD4B1F2EC52800F05AB4 /* ViewController.swift */; };
 		DCFFAD4F1F2EC52800F05AB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCFFAD4D1F2EC52800F05AB4 /* Main.storyboard */; };
 		DCFFAD511F2EC52800F05AB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCFFAD501F2EC52800F05AB4 /* Assets.xcassets */; };
 		DCFFAD541F2EC52800F05AB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCFFAD521F2EC52800F05AB4 /* LaunchScreen.storyboard */; };
+		DCFFAD5D1F2EC55500F05AB4 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFFAD5C1F2EC55500F05AB4 /* MainVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		77358ECC81EF6CCFCAB8540E /* Pods-TranslateMeUp!.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranslateMeUp!.release.xcconfig"; path = "Pods/Target Support Files/Pods-TranslateMeUp!/Pods-TranslateMeUp!.release.xcconfig"; sourceTree = "<group>"; };
+		CED2EC9CDE8407B5CDEBA66C /* Pods_TranslateMeUp_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TranslateMeUp_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCFFAD461F2EC52800F05AB4 /* TranslateMeUp!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TranslateMeUp!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCFFAD491F2EC52800F05AB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DCFFAD4B1F2EC52800F05AB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DCFFAD4E1F2EC52800F05AB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DCFFAD501F2EC52800F05AB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCFFAD531F2EC52800F05AB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCFFAD551F2EC52800F05AB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCFFAD5C1F2EC55500F05AB4 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		FF2C1565CE79576A7BC46F73 /* Pods-TranslateMeUp!.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranslateMeUp!.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TranslateMeUp!/Pods-TranslateMeUp!.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A6EB9817228E59829CD04CE /* Pods_TranslateMeUp_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8FC34A2FE5AA72A5E6DFA3A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF2C1565CE79576A7BC46F73 /* Pods-TranslateMeUp!.debug.xcconfig */,
+				77358ECC81EF6CCFCAB8540E /* Pods-TranslateMeUp!.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		97ED5D07EAC6C94237421EC4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CED2EC9CDE8407B5CDEBA66C /* Pods_TranslateMeUp_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DCFFAD3D1F2EC52800F05AB4 = {
 			isa = PBXGroup;
 			children = (
 				DCFFAD481F2EC52800F05AB4 /* TranslateMeUp! */,
 				DCFFAD471F2EC52800F05AB4 /* Products */,
+				97ED5D07EAC6C94237421EC4 /* Frameworks */,
+				8FC34A2FE5AA72A5E6DFA3A1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +78,22 @@
 		DCFFAD481F2EC52800F05AB4 /* TranslateMeUp! */ = {
 			isa = PBXGroup;
 			children = (
+				DCFFAD5B1F2EC53400F05AB4 /* Controller */,
 				DCFFAD491F2EC52800F05AB4 /* AppDelegate.swift */,
-				DCFFAD4B1F2EC52800F05AB4 /* ViewController.swift */,
 				DCFFAD4D1F2EC52800F05AB4 /* Main.storyboard */,
 				DCFFAD501F2EC52800F05AB4 /* Assets.xcassets */,
 				DCFFAD521F2EC52800F05AB4 /* LaunchScreen.storyboard */,
 				DCFFAD551F2EC52800F05AB4 /* Info.plist */,
 			);
 			path = "TranslateMeUp!";
+			sourceTree = "<group>";
+		};
+		DCFFAD5B1F2EC53400F05AB4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DCFFAD5C1F2EC55500F05AB4 /* MainVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +103,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCFFAD581F2EC52800F05AB4 /* Build configuration list for PBXNativeTarget "TranslateMeUp!" */;
 			buildPhases = (
+				2BEC65CF72249C5B25C89BF3 /* [CP] Check Pods Manifest.lock */,
 				DCFFAD421F2EC52800F05AB4 /* Sources */,
 				DCFFAD431F2EC52800F05AB4 /* Frameworks */,
 				DCFFAD441F2EC52800F05AB4 /* Resources */,
+				5D620F67C215441578DCE552 /* [CP] Embed Pods Frameworks */,
+				F3C9240D020362FB60B88112 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +132,7 @@
 					DCFFAD451F2EC52800F05AB4 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 25EP5Y6HLG;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,13 +168,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2BEC65CF72249C5B25C89BF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5D620F67C215441578DCE552 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TranslateMeUp!/Pods-TranslateMeUp!-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3C9240D020362FB60B88112 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TranslateMeUp!/Pods-TranslateMeUp!-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DCFFAD421F2EC52800F05AB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCFFAD4C1F2EC52800F05AB4 /* ViewController.swift in Sources */,
 				DCFFAD4A1F2EC52800F05AB4 /* AppDelegate.swift in Sources */,
+				DCFFAD5D1F2EC55500F05AB4 /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +345,12 @@
 		};
 		DCFFAD591F2EC52800F05AB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF2C1565CE79576A7BC46F73 /* Pods-TranslateMeUp!.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 25EP5Y6HLG;
 				INFOPLIST_FILE = "TranslateMeUp!/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.furkan.TranslateMeUp-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,10 +360,12 @@
 		};
 		DCFFAD5A1F2EC52800F05AB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77358ECC81EF6CCFCAB8540E /* Pods-TranslateMeUp!.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 25EP5Y6HLG;
 				INFOPLIST_FILE = "TranslateMeUp!/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.furkan.TranslateMeUp-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,6 +392,7 @@
 				DCFFAD5A1F2EC52800F05AB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
